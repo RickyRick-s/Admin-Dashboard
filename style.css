@@ -1,0 +1,303 @@
+
+@font-face {
+    font-family: 'roboto';
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+body{
+    font-family: roboto;
+    background-color: #F5F5F5;
+    margin: 0;           
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+    align-content: stretch;
+    margin: 0;           
+    padding: 0;
+}
+
+
+.header{
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 20px;
+    background-color: #F8E7F6;
+    box-shadow: 0 5px 4px -2px gray;
+}
+
+.greet{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.user{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+.greeting-message{
+    grid-column: 2/2;
+    margin: 0;
+    font-size: 30px;
+    
+}
+
+.user-pic{
+    grid-row: 1 / 3;
+    border-radius: 50%;
+}
+
+.icon{
+    border-radius: 50%;
+}
+
+.menu-icon {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}
+
+.leftbar{
+    grid-row: 1 / 3;
+    display: flex;
+    min-width: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #DD88CF;
+
+}
+
+.optionwrapper ul {
+    padding: 0;
+    margin: 0;
+    padding-left: 30px;
+}
+
+.optionwrapper{
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 0; 
+    
+}
+
+.optionwrapper li{
+    font-size: 35px;
+    margin-top: 15px;
+    color: #fff
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#fff; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+.cards{
+    display: grid;
+    grid-column: 2 / 2;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.card{
+    border: 3px #DD88CF solid;
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    position: relative;
+    border-left: 10px solid #DD88CF;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 4px -2px gray;
+}
+
+.ctitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.imgwrapper{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.card img{
+    height: 25px;
+    width: 25px;
+}
+
+
+.rightbar{
+    grid-column: 3 / 3;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.side-upper-cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rightdown{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 10px 0;
+}
+
+.trend-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.right, .rightdown {
+    border: 2px solid #DD88CF;
+    height: 350px;
+    width: 250px;
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+    background: #fff; 
+    min-width: 0; 
+    min-height: 0;
+    padding: 16px 12px;     
+    max-width: 350px;
+    max-width: 350px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 5px 4px -2px gray;
+}
+
+.trend-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rightdown div, .right .suc, .right .suc-middle, .right .suc-end {
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+
+div h5 {
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+h5~p{
+    margin: 0;
+    margin-bottom: 15px;
+    align-self: center;
+}
+
+.suc{
+    flex: 1;
+    padding: 12px;
+}
+
+.suc h5, .suc p {
+    margin: 0px;
+}
+
+.suc#middle{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;     
+}
+
+.suc#end{
+    border-top: 1px solid gray;
+}
+
+h4{
+    padding-left: 40px;
+}
+
+.searchpanel{
+    display: flex;
+    align-items: center;
+}
+
+input#search{
+    width: 800px;
+    border-radius: 25px;
+    padding: 8px 16px;    
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    
+}
+
+.buttons ul{
+    display: flex;
+    justify-content: center; 
+    gap: 20px;               
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.buttons ul li button{
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #DD88CF;
+    color: white;
+    font-weight: bold;
+}
+
+.buttons button:hover {
+    background: #4B164C;
+}
+
+.notifications{
+    display: flex;
+    align-items: center;
+}
+
+.notificationcontainer{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+
